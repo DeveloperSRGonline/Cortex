@@ -1,0 +1,17 @@
+{
+  "name": "cortex",
+  "version": "1.0.0",
+  "description": "AI-Powered Code Editor",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "Shivam Garade",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
