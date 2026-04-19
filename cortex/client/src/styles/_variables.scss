@@ -1,0 +1,64 @@
+// Cortex Design Tokens
+
+// 4.2 Color Tokens
+$color-bg-base: #0A0A0F;
+$color-bg-surface: #111118;
+$color-bg-elevated: #1A1A28;
+$color-bg-input: #0F0F1A;
+$color-border-subtle: #1E1E30;
+$color-border-default: #2E2E45;
+$color-text-primary: #E5E5F0;
+$color-text-secondary: #8888AA;
+$color-text-disabled: #44445A;
+$color-primary: #4F6EF7;
+$color-primary-hover: #6B85FF;
+$color-primary-muted: #1E2A5C;
+$color-secondary: #8B5CF6;
+$color-accent: #22D3EE;
+$color-memory: #F59E0B;
+$color-success: #22C55E;
+$color-warning: #F97316;
+$color-error: #EF4444;
+$color-code-bg: #0D0D17;
+$color-highlight: rgba(79, 110, 247, 0.125); // #4F6EF720
+
+// 4.3 Typography
+$font-ui: 'Inter', system-ui, -apple-system, sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 13px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// 4.4 Spacing Scale
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-8: 32px;
+$space-12: 48px;
+
+// 4.5 Border Radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-full: 9999px;
+
+// 4.6 Shadow & Elevation
+$shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+$shadow-md: 0 4px 12px rgba(0,0,0,0.5);
+$shadow-lg: 0 8px 32px rgba(0,0,0,0.6);
+$shadow-glow-primary: 0 0 20px rgba(79,110,247,0.25);
+$shadow-glow-memory: 0 0 20px rgba(245,158,11,0.25);

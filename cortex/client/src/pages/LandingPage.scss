@@ -1,0 +1,43 @@
+@import '../styles/variables';
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-bg-base;
+}
+
+.landing-content {
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-2;
+  margin-bottom: $space-4;
+}
+
+.cortex-logo {
+  font-size: 64px;
+  color: $color-primary;
+}
+
+.brand-name {
+  font-size: 48px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
+
+.tagline {
+  font-size: $font-size-xl;
+  color: $color-text-secondary;
+  margin-bottom: $space-8;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+}

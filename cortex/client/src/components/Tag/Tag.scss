@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: $color-bg-elevated;
+  color: $color-text-primary;
+  padding: 2px $space-2;
+  border-radius: $radius-sm;
+  font-size: $font-size-xs;
+  border: 1px solid $color-border-subtle;
+  gap: $space-1;
+
+  &-remove {
+    background: none;
+    border: none;
+    color: $color-text-secondary;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $color-error;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.monaco-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.no-file-selected {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-code-bg;
+  color: $color-text-secondary;
+  font-size: $font-size-md;
+}

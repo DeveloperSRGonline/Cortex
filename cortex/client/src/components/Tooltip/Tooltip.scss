@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+.tooltip-container {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip-box {
+  position: absolute;
+  background-color: $color-bg-elevated;
+  color: $color-text-primary;
+  padding: $space-1 $space-2;
+  border-radius: $radius-sm;
+  font-size: $font-size-xs;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1100;
+  box-shadow: $shadow-md;
+  border: 1px solid $color-border-subtle;
+
+  &-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-$space-2);
+  }
+
+  &-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY($space-2);
+  }
+
+  &-left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-$space-2);
+  }
+
+  &-right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX($space-2);
+  }
+}

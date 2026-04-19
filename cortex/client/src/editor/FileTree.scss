@@ -1,0 +1,67 @@
+@import '../styles/variables';
+
+.file-tree {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  user-select: none;
+}
+
+.file-tree-header {
+  padding: $space-2 $space-4;
+  font-size: 11px;
+  font-weight: $font-weight-bold;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.file-tree-item {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  gap: $space-2;
+
+  &:hover {
+    background-color: $color-bg-elevated;
+    color: $color-text-primary;
+  }
+
+  &.active {
+    background-color: $color-primary-muted;
+    color: $color-primary-hover;
+  }
+
+  .chevron {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+    
+    &.open {
+      transform: rotate(90deg);
+    }
+  }
+
+  .file-icon {
+    display: flex;
+    align-items: center;
+    color: $color-text-secondary;
+  }
+
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.file-tree-empty {
+  padding: $space-4;
+  color: $color-text-disabled;
+  font-size: $font-size-sm;
+  text-align: center;
+}

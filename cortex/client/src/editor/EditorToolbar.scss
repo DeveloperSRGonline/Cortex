@@ -1,0 +1,80 @@
+@import '../styles/variables';
+
+.editor-toolbar {
+  height: 40px;
+  background-color: $color-bg-surface;
+  border-bottom: 1px solid $color-border-subtle;
+  display: flex;
+  align-items: center;
+  padding: 0 $space-4;
+  gap: $space-4;
+  user-select: none;
+}
+
+.toolbar-zone {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+  
+  &.zone-center {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+.breadcrumb {
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+}
+
+.line-col {
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+  font-family: $font-mono;
+}
+
+.cta-intent { color: $color-secondary !important; border-color: rgba($color-secondary, 0.3) !important; }
+.cta-explainer { color: $color-accent !important; border-color: rgba($color-accent, 0.3) !important; }
+.cta-memory { color: $color-memory !important; border-color: rgba($color-memory, 0.3) !important; }
+
+.toolbar-icon-btn {
+  background: none;
+  border: none;
+  color: $color-text-secondary;
+  font-size: $font-size-xs;
+  cursor: pointer;
+  padding: $space-1 $space-2;
+  border-radius: $radius-sm;
+
+  &:hover {
+    background-color: $color-bg-elevated;
+    color: $color-text-primary;
+  }
+}
+
+.settings-btn {
+  background: none;
+  border: none;
+  color: $color-text-secondary;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $color-text-primary;
+  }
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px $space-2;
+  border-radius: $radius-sm;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+
+  &-primary {
+    background-color: rgba($color-primary, 0.15);
+    color: $color-primary;
+  }
+
+  &-secondary {
+    background-color: rgba($color-secondary, 0.15);
+    color: $color-secondary;
+  }
+
+  &-success {
+    background-color: rgba($color-success, 0.15);
+    color: $color-success;
+  }
+
+  &-warning {
+    background-color: rgba($color-warning, 0.15);
+    color: $color-warning;
+  }
+
+  &-error {
+    background-color: rgba($color-error, 0.15);
+    color: $color-error;
+  }
+}
